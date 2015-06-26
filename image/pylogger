@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+import argparse, sys, syslog 
+parser = argparse.ArgumentParser(description="Python version of logger")
+parser.add_argument('-t')
+parser.add_argument('-p')
+parser.add_argument('-F')
+args = parser.parse_args()
+syslog.openlog(args.t,0,int(args.F))
+for line in sys.stdin:
+   syslog.syslog(int(args.p),line)
+syslog.closelog()
+

@@ -1,0 +1,13 @@
+/var/log/syslog
+{
+    rotate 60
+    daily 
+    missingok
+    notifempty
+    compress
+    delaycompress
+    postrotate
+        sv reload rsyslog
+    endscript
+}
+
