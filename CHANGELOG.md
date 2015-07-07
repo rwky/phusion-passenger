@@ -9,7 +9,7 @@
 
 ## 1.0.5 (2015-06-25) Based off 0.9.15
 
-* Updated packages to patch Pyhon and Patch USN-2653-1, USN-2651-1
+* Updated packages to patch Python and Patch USN-2653-1, USN-2651-1
 
 ## 1.0.4 (2015-06-13) Based off 0.9.15
 
