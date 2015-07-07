@@ -1,3 +1,7 @@
+## 2.0.1 (2015-07-07) Based off 0.9.15
+
+* Updated passenger to 5.0.13
+
 ## 2.0.0 (2015-06-26) Based off 0.9.15
 
 * Updated nginx to 1.8.0
