@@ -1,3 +1,7 @@
+## 3.0.0 (2015-07-15) Based off 0.9.16
+
+* Updated phusion/passenger-docker to 0.9.16
+
 ## 2.0.1 (2015-07-07) Based off 0.9.15
 
 * Updated passenger to 5.0.13
