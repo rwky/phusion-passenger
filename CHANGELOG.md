@@ -1,3 +1,9 @@
+## 3.0.1 (2015-08-03) Based off 0.9.16
+
+* Updated passenger to 5.0.15
+* Updated libsqlite3 USN-2698-1
+* Updated libpcre USN-2694-1
+
 ## 3.0.0 (2015-07-15) Based off 0.9.16
 
 * Updated phusion/passenger-docker to 0.9.16
