@@ -1,3 +1,7 @@
+## 3.0.2 (2015-08-10) Based off 0.9.17
+
+* Fixed logrotate not rotating /var/log/syslog
+
 ## 3.0.1 (2015-08-03) Based off 0.9.16
 
 * Updated passenger to 5.0.15

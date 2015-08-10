@@ -1,4 +1,4 @@
-FROM phusion/passenger-customizable:0.9.16
+FROM phusion/passenger-customizable:0.9.17
 MAINTAINER Rowan Wookey <admin@rwky.net>
 ENV HOME /root
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5862E31D && \
@@ -23,8 +23,7 @@ mkdir -p /etc/service/rsyslog && \
 touch /etc/service/rsyslog/down && \
 touch /etc/service/exim/down && \
 touch /etc/service/nginx/down && \
-/etc/my_init.d/00_regen_ssh_host_keys.sh -f && \
-/usr/sbin/logrotate /etc/logrotate.conf
+/etc/my_init.d/00_regen_ssh_host_keys.sh -f
 COPY image/rsyslog.conf /etc/rsyslog.conf
 COPY image/00-default.conf /etc/rsyslog.d/
 COPY image/rsyslog.logrotate /etc/logrotate.d/rsyslog
@@ -37,4 +36,5 @@ COPY image/pylogger /usr/local/bin/
 COPY image/security.list /etc/apt/security.list
 RUN apt-get update -o Dir::Etc::SourceList=/etc/apt/security.list -o Dir::Etc::SourceParts=/tmp  && \
 apt-get upgrade -yq -o Dir::Etc::SourceList=/etc/apt/security.list -o Dir::Etc::SourceParts=/tmp && \
-apt-get update && apt-get clean && rm -rf /var/lib/apt/lists/*
+apt-get update && apt-get clean && rm -rf /var/lib/apt/lists/* && \
+/usr/sbin/logrotate -v /etc/logrotate.conf
