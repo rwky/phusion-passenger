@@ -1,3 +1,7 @@
+## 3.0.3 (2015-08-15) Based off 0.9.17
+
+* Updated openssh USN-2710-1
+
 ## 3.0.2 (2015-08-10) Based off 0.9.17
 
 * Fixed logrotate not rotating /var/log/syslog
