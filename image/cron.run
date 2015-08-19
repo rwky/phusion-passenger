@@ -1,0 +1,5 @@
+#!/bin/bash
+shopt -s nullglob
+touch /etc/crontab /etc/cron.{d,hourly,daily,weekly,monthly}/*
+exec /usr/sbin/cron -f
+

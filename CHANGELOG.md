@@ -1,3 +1,8 @@
+## 3.0.4 (2015-08-19) Based off 0.9.18
+
+* Updated openssh USN-2710-2
+* Fixed crons not running on overlayfs by running touch on all cron files
+
 ## 3.0.3 (2015-08-15) Based off 0.9.17
 
 * Updated openssh USN-2710-1

@@ -34,6 +34,7 @@ COPY image/rsyslog.run /etc/service/rsyslog/run
 COPY image/nginx.run /etc/service/nginx/run
 COPY image/pylogger /usr/local/bin/
 COPY image/security.list /etc/apt/security.list
+COPY image/cron.run /etc/service/cron/run
 RUN apt-get update -o Dir::Etc::SourceList=/etc/apt/security.list -o Dir::Etc::SourceParts=/tmp  && \
 apt-get upgrade -yq -o Dir::Etc::SourceList=/etc/apt/security.list -o Dir::Etc::SourceParts=/tmp && \
 apt-get update && apt-get clean && rm -rf /var/lib/apt/lists/* && \
