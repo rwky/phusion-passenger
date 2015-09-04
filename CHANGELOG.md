@@ -1,4 +1,8 @@
-## 3.0.4 (2015-08-19) Based off 0.9.18
+## 3.0.5 (2015-09-04) Based off 0.9.17
+
+* Updated passenger to 5.0.16
+
+## 3.0.4 (2015-08-19) Based off 0.9.17
 
 * Updated openssh USN-2710-2
 * Fixed crons not running on overlayfs by running touch on all cron files
