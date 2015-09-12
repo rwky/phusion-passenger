@@ -1,3 +1,7 @@
+## 3.0.6 (2015-09-12) Based off 0.9.17
+
+* Updated passenger to 5.0.18
+
 ## 3.0.5 (2015-09-04) Based off 0.9.17
 
 * Updated passenger to 5.0.16
