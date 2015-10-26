@@ -2,7 +2,6 @@ FROM phusion/passenger-customizable:0.9.17
 MAINTAINER Rowan Wookey <admin@rwky.net>
 ENV HOME /root
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5862E31D && \
-echo "deb http://ppa.launchpad.net/rwky/nodejs/ubuntu trusty main" > /etc/apt/sources.list.d/nodejs.list && \
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0F6DD8135234BF2B && \
 echo "deb http://ppa.launchpad.net/adiscon/v8-stable/ubuntu trusty main\ndeb-src http://ppa.launchpad.net/adiscon/v8-stable/ubuntu trusty main" > /etc/apt/sources.list.d/rsyslog.list && \
 apt-get -y purge syslog-ng && \

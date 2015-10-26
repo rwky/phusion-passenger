@@ -1,3 +1,8 @@
+## 3.0.7 (2015-10-26) Based off 0.9.17
+
+* Updated passenger to 5.0.21
+* Switched to nodesource for nodejs
+
 ## 3.0.6 (2015-09-12) Based off 0.9.17
 
 * Updated passenger to 5.0.18
