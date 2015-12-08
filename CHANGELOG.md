@@ -1,3 +1,7 @@
+## 3.0.9 (2015-12-08) Based off 0.9.17
+
+* Updated to passenger 5.0.22
+
 ## 3.0.8 (2015-12-07) Based off 0.9.17
 
 * Updated openssl USN-2830-1
