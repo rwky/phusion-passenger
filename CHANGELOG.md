@@ -1,3 +1,9 @@
+## 4.0.0 (2015-12-16) Based off 0.9.18
+
+* Updated base image to 0.9.18
+* Updated git
+* Update libxml
+
 ## 3.0.9 (2015-12-08) Based off 0.9.17
 
 * Updated to passenger 5.0.22

@@ -1,4 +1,4 @@
-FROM phusion/passenger-customizable:0.9.17
+FROM phusion/passenger-customizable:0.9.18
 MAINTAINER Rowan Wookey <admin@rwky.net>
 ENV HOME /root
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5862E31D && \
