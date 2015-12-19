@@ -5,6 +5,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5862E31D && \
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0F6DD8135234BF2B && \
 echo "deb http://ppa.launchpad.net/adiscon/v8-stable/ubuntu trusty main\ndeb-src http://ppa.launchpad.net/adiscon/v8-stable/ubuntu trusty main" > /etc/apt/sources.list.d/rsyslog.list && \
 apt-get -y purge syslog-ng && \
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash - && \
 apt-get update && \
 apt-get -y install rsyslog && \
 apt-get -y -o Dpkg::Options::="--force-confold" install nginx-common nginx-extras passenger passenger-dev passenger-doc && \

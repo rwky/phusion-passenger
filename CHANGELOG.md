@@ -1,3 +1,7 @@
+## 5.0.0 (2015-12-19) Based off 0.9.18
+
+* Updated default node to 4.x LTS branch
+
 ## 4.0.0 (2015-12-16) Based off 0.9.18
 
 * Updated base image to 0.9.18
