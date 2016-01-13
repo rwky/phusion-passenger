@@ -1,3 +1,9 @@
+## 5.0.1 (2016-01-13)
+
+* Updated openssl
+* Updated gnutls
+* Update libpng
+
 ## 5.0.0 (2015-12-19) Based off 0.9.18
 
 * Updated default node to 4.x LTS branch
