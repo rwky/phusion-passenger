@@ -1,3 +1,10 @@
+## 5.1.0 (2016-01-20)
+
+* Changed SSL params to not use DHE suites so ssl_dhparam is no longer required.
+* Updated libc
+* Update libxml2
+* Updated openssh
+
 ## 5.0.1 (2016-01-13)
 
 * Updated openssl
