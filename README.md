@@ -19,15 +19,6 @@ I personally find useful.
 * Includes a small python script to forward logs to syslog
 * Uses auto for the number of nginx workers
 
-## SSL Diffie-Hellman file
-Nginx won't start without /etc/ssl/dh.pem being created, since you don't want this file to be public or the same as mine it's not generated.
-
-To generate it add the following to your Dockerfile (do not make the image public!).
-
-```
-RUN openssl dhparam -out /etc/ssl/dh.pem 2048 && chmod 0400 /etc/ssl/dh.pem
-```
-
 ## SSL HSTS
 
 It's advisable if you run a HTTPS only site to add the HSTS header i.e.
