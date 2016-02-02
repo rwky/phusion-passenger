@@ -1,3 +1,7 @@
+## 5.1.2 (2016-02-02)
+
+* Updated phusion passenger to 5.0.24
+
 ## 5.1.1 (2016-02-01)
 
 * Updated openssl
