@@ -1,3 +1,7 @@
+## 5.1.3
+
+* Updated phusion passenger to 5.0.25
+
 ## 5.1.2 (2016-02-02)
 
 * Updated phusion passenger to 5.0.24
