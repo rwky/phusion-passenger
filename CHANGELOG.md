@@ -1,6 +1,7 @@
 ## 5.1.3
 
 * Updated phusion passenger to 5.0.25
+* Updated libc USN-2900-1
 
 ## 5.1.2 (2016-02-02)
 
