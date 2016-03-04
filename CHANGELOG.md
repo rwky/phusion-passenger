@@ -1,3 +1,9 @@
+### 5.1.4
+
+* Updated phusion-passenger to 5.0.26
+* Updated openssl USN-2914-1
+* Updated libperl USN-2916-1
+
 ## 5.1.3
 
 * Updated phusion passenger to 5.0.25
