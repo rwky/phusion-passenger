@@ -1,3 +1,8 @@
+### 5.1.5
+
+* Updated phusion-passenger to 5.0.27
+* Security updates to git libpam libpcre3 tzdata
+
 ### 5.1.4
 
 * Updated phusion-passenger to 5.0.26
