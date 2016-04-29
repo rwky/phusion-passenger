@@ -1,3 +1,7 @@
+### 5.2.0
+
+* Updated to phusion-passenger 5.0.28 which includes nginx 1.10
+
 ### 5.1.5
 
 * Updated phusion-passenger to 5.0.27
