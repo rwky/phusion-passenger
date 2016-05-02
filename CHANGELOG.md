@@ -1,3 +1,10 @@
+### 6.0.0
+
+* Removed ssh server (use docker exec instead)
+* Removed dhcp client
+* Purged syslog-ng
+* Clean up final layer
+
 ### 5.2.0
 
 * Updated to phusion-passenger 5.0.28 which includes nginx 1.10
