@@ -7,6 +7,7 @@ echo "deb http://ppa.launchpad.net/adiscon/v8-stable/ubuntu trusty main\ndeb-src
 apt-get -y purge syslog-ng-core syslog-ng ntpdate isc-dhcp-common isc-dhcp-client openssh-server openssh-sftp-server && \
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash - && \
 apt-get update && \
+apt-get -yq upgrade && \
 apt-get -y install rsyslog && \
 apt-get -y -o Dpkg::Options::="--force-confold" install nginx-common nginx-extras passenger passenger-dev passenger-doc && \
 rm -rf /etc/my_init.d/00_regen_ssh_host_keys.sh && \
@@ -33,9 +34,6 @@ COPY image/exim.run /etc/service/exim/run
 COPY image/rsyslog.run /etc/service/rsyslog/run
 COPY image/nginx.run /etc/service/nginx/run
 COPY image/pylogger /usr/local/bin/
-COPY image/security.list /etc/apt/security.list
 COPY image/cron.run /etc/service/cron/run
-RUN apt-get update -o Dir::Etc::SourceList=/etc/apt/security.list -o Dir::Etc::SourceParts=/tmp  && \
-apt-get upgrade -yq -o Dir::Etc::SourceList=/etc/apt/security.list -o Dir::Etc::SourceParts=/tmp && \
-apt-get update && apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+RUN apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
 /usr/sbin/logrotate -v /etc/logrotate.conf

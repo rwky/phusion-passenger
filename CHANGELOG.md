@@ -1,3 +1,7 @@
+### 6.1.0
+
+* Updated packages
+
 ### 6.0.0
 
 * Removed ssh server (use docker exec instead)
