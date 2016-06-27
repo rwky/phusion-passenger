@@ -1,3 +1,7 @@
+### 6.2.0
+
+* Updated phusion-passenger to 5.0.29 
+
 ### 6.1.0
 
 * Updated packages
