@@ -7,9 +7,8 @@ echo "deb http://ppa.launchpad.net/adiscon/v8-stable/ubuntu trusty main\ndeb-src
 apt-get -y purge syslog-ng-core syslog-ng ntpdate isc-dhcp-common isc-dhcp-client openssh-server openssh-sftp-server && \
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash - && \
 apt-get update && \
-apt-get -yq upgrade && \
-apt-get -y install rsyslog && \
-apt-get -y -o Dpkg::Options::="--force-confold" install nginx-common nginx-extras passenger passenger-dev passenger-doc && \
+apt-get -yq -o Dpkg::Options::="--force-confold" upgrade && \
+apt-get -y -o Dpkg::Options::="--force-confold" install rsyslog nginx-common nginx-extras passenger passenger-dev passenger-doc && \
 rm -rf /etc/my_init.d/00_regen_ssh_host_keys.sh && \
 rm -rf /etc/rsyslog.d/* && \
 rm -rf /etc/logrotate.d/* && \
