@@ -1,3 +1,7 @@
+### 7.0.0 (2016-08-02)
+
+* Updated to passenger-docker 0.9.19
+
 ### 6.2.0
 
 * Updated phusion-passenger to 5.0.29 

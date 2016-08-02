@@ -1,12 +1,12 @@
-FROM phusion/passenger-customizable:0.9.18
+FROM phusion/passenger-customizable:0.9.19
 MAINTAINER Rowan Wookey <admin@rwky.net>
 ENV HOME /root
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5862E31D && \
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0F6DD8135234BF2B && \
-echo "deb http://ppa.launchpad.net/adiscon/v8-stable/ubuntu trusty main\ndeb-src http://ppa.launchpad.net/adiscon/v8-stable/ubuntu trusty main" > /etc/apt/sources.list.d/rsyslog.list && \
-apt-get -y purge syslog-ng-core syslog-ng ntpdate isc-dhcp-common isc-dhcp-client openssh-server openssh-sftp-server && \
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash - && \
+echo "deb http://ppa.launchpad.net/adiscon/v8-stable/ubuntu xenial main\ndeb-src http://ppa.launchpad.net/adiscon/v8-stable/ubuntu xenial main" > /etc/apt/sources.list.d/rsyslog.list && \
+curl -sL https://deb.nodesource.com/setup_4.x | bash - && \
 apt-get update && \
+apt-get -y purge syslog-ng-core syslog-ng ntpdate isc-dhcp-common isc-dhcp-client openssh-server openssh-sftp-server && \
 apt-get -yq -o Dpkg::Options::="--force-confold" upgrade && \
 apt-get -y -o Dpkg::Options::="--force-confold" install rsyslog nginx-common nginx-extras passenger passenger-dev passenger-doc && \
 rm -rf /etc/my_init.d/00_regen_ssh_host_keys.sh && \
