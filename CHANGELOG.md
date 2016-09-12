@@ -1,3 +1,7 @@
+### 7.0.1 (2016-09-12)
+
+* Updated packages fixing various USNs
+
 ### 7.0.0 (2016-08-02)
 
 * Updated to passenger-docker 0.9.19
