@@ -1,3 +1,7 @@
+### 7.0.2 (2016-09-23)
+
+* Updated packages fixes OpenSSL USN-3087-1
+
 ### 7.0.1 (2016-09-12)
 
 * Updated packages fixing various USNs
