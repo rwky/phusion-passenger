@@ -1,3 +1,7 @@
+### 7.0.3 (2016-10-11)
+
+* Updated packages fixing OpenSSL regression
+
 ### 7.0.2 (2016-09-23)
 
 * Updated packages fixes OpenSSL USN-3087-1
