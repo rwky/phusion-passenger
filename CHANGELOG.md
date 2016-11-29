@@ -1,3 +1,7 @@
+### 7.0.4 (2016-11-29)
+
+* Updated packages
+
 ### 7.0.3 (2016-10-11)
 
 * Updated packages fixing OpenSSL regression
