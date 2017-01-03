@@ -1,3 +1,8 @@
+### 7.1.0
+
+* Updated packages
+* Updated phusion-passenger to 5.1.1
+
 ### 7.0.4 (2016-11-29)
 
 * Updated packages
