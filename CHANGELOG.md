@@ -1,3 +1,8 @@
+### 7.1.2 (2017-05-03)
+
+* Updated packages
+* Updated phusion-passenger to 5.1.3
+
 ### 7.1.1 (2017-02-01)
 
 * Updated packages (OpenSSL USN-3181-1)
