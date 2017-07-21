@@ -1,3 +1,8 @@
+## 8.0.0
+
+* Updated phusion-passenger to 5.1.6
+* Updated to passenger-docker 0.9.22 (includes base image 0.9.22)
+
 ## 7.2.0
 
 * Updated phusion-passenger to 5.1.5
