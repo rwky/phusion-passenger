@@ -1,3 +1,7 @@
+## 8.0.1
+
+* Updated phusion-passenger to 5.1.7
+
 ## 8.0.0
 
 * Updated phusion-passenger to 5.1.6
