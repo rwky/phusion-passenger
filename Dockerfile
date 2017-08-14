@@ -1,4 +1,4 @@
-FROM phusion/passenger-customizable:0.9.22
+FROM phusion/passenger-customizable:0.9.24
 MAINTAINER Rowan Wookey <admin@rwky.net>
 ENV HOME /root
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5862E31D && \
@@ -8,7 +8,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | bash - && \
 apt-get update && \
 apt-get -y purge syslog-ng-core syslog-ng ntpdate isc-dhcp-common isc-dhcp-client openssh-server openssh-sftp-server && \
 apt-get -yq -o Dpkg::Options::="--force-confold" upgrade && \
-apt-get -y -o Dpkg::Options::="--force-confold" install rsyslog nginx-common nginx-extras passenger passenger-dev passenger-doc && \
+apt-get -y -o Dpkg::Options::="--force-confold" install tzdata rsyslog nginx-common nginx-extras passenger passenger-dev passenger-doc && \
 rm -rf /etc/my_init.d/00_regen_ssh_host_keys.sh && \
 rm -rf /etc/rsyslog.d/* && \
 rm -rf /etc/logrotate.d/* && \

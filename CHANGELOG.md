@@ -1,3 +1,8 @@
+## 9.0.0
+
+* Updated to passenger-docker 0.9.24
+* Added missing tzdata which went missing in 8.0.0
+
 ## 8.0.1
 
 * Updated phusion-passenger to 5.1.7
