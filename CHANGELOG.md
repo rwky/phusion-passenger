@@ -1,3 +1,7 @@
+## 10.0.0
+
+* Updated to passenger 5.1.7 which includes updating nginx to 1.12.1
+
 ## 9.0.0
 
 * Updated to passenger-docker 0.9.24
