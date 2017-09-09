@@ -23,7 +23,8 @@ mkdir -p /etc/service/exim && \
 mkdir -p /etc/service/rsyslog && \
 touch /etc/service/rsyslog/down && \
 touch /etc/service/exim/down && \
-touch /etc/service/nginx/down
+touch /etc/service/nginx/down && \
+sed -i 's/# su root syslog/su root syslog/' /etc/logrotate.conf
 COPY image/rsyslog.conf /etc/rsyslog.conf
 COPY image/00-default.conf /etc/rsyslog.d/
 COPY image/rsyslog.logrotate /etc/logrotate.d/rsyslog

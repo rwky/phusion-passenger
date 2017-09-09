@@ -1,3 +1,7 @@
+## 10.1.1
+
+* Fixed logrotate not running
+
 ## 10.1.0
 
 * Add gzip compression of svg by default
