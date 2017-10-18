@@ -1,3 +1,7 @@
+## 10.2.0
+
+* Updated to passenger-docker 0.9.26
+
 ## 10.1.1
 
 * Fixed logrotate not running
