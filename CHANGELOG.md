@@ -1,3 +1,7 @@
+## 10.2.1
+
+* Updated packages
+
 ## 10.2.0
 
 * Updated to passenger-docker 0.9.26
