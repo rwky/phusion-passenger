@@ -1,3 +1,8 @@
+## 10.4.0
+
+* Updated packages
+* Updated passenger to 5.2.0
+
 ## 10.3.0
 
 * Updated packages
