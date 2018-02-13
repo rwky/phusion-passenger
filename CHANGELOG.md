@@ -1,3 +1,8 @@
+## 11.0.0
+
+* Updated to passenger-customizable:0.9.28
+* Updated node to 8.x
+
 ## 10.4.0
 
 * Updated packages

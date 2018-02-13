@@ -1,10 +1,10 @@
-FROM phusion/passenger-customizable:0.9.27
+FROM phusion/passenger-customizable:0.9.28
 MAINTAINER Rowan Wookey <admin@rwky.net>
 ENV HOME /root
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5862E31D && \
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0F6DD8135234BF2B && \
 echo "deb http://ppa.launchpad.net/adiscon/v8-stable/ubuntu xenial main\ndeb-src http://ppa.launchpad.net/adiscon/v8-stable/ubuntu xenial main" > /etc/apt/sources.list.d/rsyslog.list && \
-curl -sL https://deb.nodesource.com/setup_4.x | bash - && \
+curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
 apt-get update && \
 apt-get -y purge syslog-ng-core syslog-ng ntpdate isc-dhcp-common isc-dhcp-client openssh-server openssh-sftp-server && \
 apt-get -yq -o Dpkg::Options::="--force-confold" upgrade && \
