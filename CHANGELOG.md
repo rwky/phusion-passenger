@@ -1,3 +1,8 @@
+## 11.1.0
+
+* Updated to passenger-customizable:0.9.29
+* Updated to passenger 5.2.1
+
 ## 11.0.0
 
 * Updated to passenger-customizable:0.9.28
