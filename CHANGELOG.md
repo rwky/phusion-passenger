@@ -1,3 +1,9 @@
+## 12.0.0
+
+* Updated to passenger-customizable:0.9.33
+* Removed rsyslog, now using syslog-ng from upstream
+* Removed obsolete files
+
 ## 11.1.0
 
 * Updated to passenger-customizable:0.9.29
