@@ -1,6 +1,7 @@
-FROM phusion/passenger-customizable:0.9.33
+FROM phusion/passenger-customizable:0.9.34
 MAINTAINER Rowan Wookey <admin@rwky.net>
 ENV HOME /root
+COPY image/01-syslog-perms.sh /etc/my_init.d/
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5862E31D && \
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0F6DD8135234BF2B && \
 curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add - && \
@@ -17,7 +18,9 @@ rm -rf /etc/service/nginx-log-forwarder && \
 mkdir -p /etc/service/exim && \
 touch /etc/service/exim/down && \
 touch /etc/service/nginx/down && \
-sed -i 's/rotate 7/rotate 60/' /etc/logrotate.d/syslog-ng
+sed -i 's/rotate 7/rotate 60/' /etc/logrotate.d/syslog-ng && \
+sed -i 's@sv reload syslog-ng > /dev/null@kill -HUP \`cat /var/run/syslog-ng.pid\`@' /etc/logrotate.d/syslog-ng && \
+chmod +x /etc/my_init.d/01-syslog-perms.sh
 COPY image/nginx/* /etc/nginx/conf.d/
 COPY image/nginx.conf /etc/nginx/nginx.conf
 COPY image/exim.run /etc/service/exim/run

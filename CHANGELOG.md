@@ -1,3 +1,10 @@
+## 12.1.0
+
+* Fixed logrotate not running if /var/log has incorrect permissions
+* Fixed logrotate not triggering syslog reload (Fixed upstream https://github.com/phusion/baseimage-docker/commit/cb8cd8ad82c87d2c3dfd53af09a39f58aef2d78a but not in a docker image yet)
+* Updated to passenger-customizable:0.9.34 
+* Updated packages
+
 ## 12.0.0
 
 * Updated to passenger-customizable:0.9.33
