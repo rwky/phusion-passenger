@@ -1,4 +1,4 @@
-FROM phusion/passenger-customizable:0.9.34
+FROM phusion/passenger-customizable:0.9.35
 MAINTAINER Rowan Wookey <admin@rwky.net>
 ENV HOME /root
 COPY image/01-syslog-perms.sh /etc/my_init.d/

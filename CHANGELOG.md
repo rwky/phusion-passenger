@@ -1,3 +1,7 @@
+## 12.2.0
+
+* Updated to passenger-customizable:0.9.35 (which updates passenger and packages)
+
 ## 12.1.0
 
 * Fixed logrotate not running if /var/log has incorrect permissions
