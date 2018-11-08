@@ -1,3 +1,7 @@
+## 13.0.0
+
+* Updated to passenger-customizable:1.0.0 (which updates passenger, packages and distro)
+
 ## 12.2.0
 
 * Updated to passenger-customizable:0.9.35 (which updates passenger and packages)
