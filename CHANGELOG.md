@@ -1,3 +1,7 @@
+## 12.3.0
+
+* Updated passenger 5.3.6 (not upgrading to passenger-customizable:1.0.0 due to https://github.com/phusion/passenger/issues/2140)
+
 ## 12.2.0
 
 * Updated to passenger-customizable:0.9.35 (which updates passenger and packages)
