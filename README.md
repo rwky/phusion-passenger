@@ -1,3 +1,5 @@
+# THIS IS NOW UNSUPPORTED THE UPSTREAM RELEASE NOW DEALS WITH MOST OF THE THINGS THIS DOES
+
 #A modified version of phusion/passenger-customizable
 
 This is a modified version of https://github.com/phusion/passenger-docker
